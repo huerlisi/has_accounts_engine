@@ -1,7 +1,3 @@
-0.20.0
-======
-* Add account_type to Account.attr_accessible.
-* Add some more translations from Bookyt.
-* Use BankAccount as default class in BankAccounts Controller.
-* Update Bank model to provide attr_accessible and drop has_vcards as it is in the parent class.
-* Add banks controller and views.
+1.0.0 (unreleased)
+=====
+Started by factoring out controllers, views, helpers from has_accounts gem.
