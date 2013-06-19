@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.add_dependency(%q<has_accounts>)
   s.add_dependency(%q<has_vcards>)
   s.add_dependency(%q<i18n_rails_helpers>)
-  s.add_dependency(%q<acts_as_taggable_on>)
+  s.add_dependency(%q<acts-as-taggable-on>)
   s.add_dependency(%q<validates_timeliness>)
   s.add_dependency(%q<inherited_resources>)
 end
