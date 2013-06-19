@@ -1,3 +1,7 @@
+1.0.1
+=====
+Implement tagging support for accounts.
+
 1.0.0
 =====
 Started by factoring out controllers, views, helpers from has_accounts gem.
