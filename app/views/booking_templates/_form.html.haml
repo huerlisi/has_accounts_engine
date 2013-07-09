@@ -1,0 +1,26 @@
+= simple_form_for @booking_template do |f|
+  .row-fluid
+    .span6
+      = f.input :title, :input_html => {"data-autofocus" => true}
+    .span6
+      = f.input :code
+  .row-fluid
+    .span6
+      = f.association :credit_account, :as => :combobox, :collection => accounts_as_collection, :input_html => {:class => 'span6'}
+    .span6
+      = f.association :debit_account, :as => :combobox, :collection => accounts_as_collection, :input_html => {:class => 'span6'}
+  .row-fluid
+    .span6
+      = f.input :amount
+    .span6
+      = f.input :amount_relates_to, :collection => amount_relations_as_collection
+  .row-fluid
+    .span12
+      = f.input :tag_list, :input_html => {:class => 'select2-tags'}
+
+  .row-fluid
+    .span12
+      = f.input :comments, :input_html => {:rows => 5, :class => 'span12'}
+
+  .form-actions
+    = f.button :submit

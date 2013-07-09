@@ -7,6 +7,7 @@ de:
       bank:             Bank
       account_type:     Kontentyp
       booking:          Buchung
+      booking_template: Buchungsvorlage
 
     attributes:
       account:
@@ -43,6 +44,13 @@ de:
         destroy:        Löschen
         valuta:         Valuta
         value:          Betrag
+      booking_template:
+        amount_relates_to: "Relativ zu"
+        charge_rate_code: Abgabesatz
+        credit_account: Soll
+        debit_account: Haben
+        reference: Referenz
+        value_date: Valutadatum
 
   form:
     bank:
