@@ -1,3 +1,10 @@
+1.0.5
+=====
+* Use bootstrap markup for submit action in booking form.
+* Implement BookingTemplate support.
+* Drop size attribute from bookings.amount form field.
+* Implement basic simple bookings dialog.
+
 1.0.4
 =====
 Better default tags for Accounts.
