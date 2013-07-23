@@ -11,7 +11,7 @@ PATH
       validates_timeliness
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     accept_values_for (0.4.3)
       activemodel (>= 3.0.0)

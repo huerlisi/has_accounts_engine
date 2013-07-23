@@ -1,6 +1,6 @@
 1.1.1
 =====
-Specify dependency on Ruby >= 1.9.2
+Specify dependency on Ruby >= 1.9.3
 Fixed specs.
 
 1.1.0

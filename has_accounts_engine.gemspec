@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.files        = `git ls-files app lib config db`.split("\n")
 
   s.platform     = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 1.9.2'
+  s.required_ruby_version = '>= 1.9.3'
 
   # Dependencies
   s.add_dependency(%q<rails>, ["~> 3.1"])
