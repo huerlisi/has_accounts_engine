@@ -1,7 +1,7 @@
 has_accounts_engine
 ===================
 
-[![Build Status](https://secure.travis-ci.org/huerlisi/has_accounts_engine.png)](http://travis-ci.org/huerlisi/has_accounts_engine)
+[![Build Status](https://travis-ci.org/huerlisi/has_accounts.png?branch=master)](https://travis-ci.org/huerlisi/has_accounts)
 
 HasAccountsEngine is a full featured Rails 3 gem accompinying has_accounts with controllers, views...
 
