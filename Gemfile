@@ -32,6 +32,7 @@ end
 
 gem 'validates_timeliness'
 gem 'inherited_resources'
+gem 'haml'
 gem 'has_scope'
 gem 'cancan'
 gem 'has_vcards'
