@@ -41,4 +41,10 @@ Rails.application.routes.draw do
     resources :bookings
     resources :attachments
   end
+
+  resources :booking_templates do
+    member do
+      get :new_booking
+    end
+  end
 end
