@@ -1,3 +1,8 @@
+1.1.2
+=====
+* Update factories for accounts.
+* Add booking_templates controller spec.
+
 1.1.1
 =====
 Specify dependency on Ruby >= 1.9.3
