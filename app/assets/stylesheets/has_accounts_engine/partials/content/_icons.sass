@@ -1,11 +1,5 @@
 @import compass/typography/text/replacement
 
-=icon-text($ident, $icon: $ident, $size: 16)
-  .icon-#{$ident}-text
-    +replace-text-with-dimensions("#{$size}x#{$size}/#{$icon}.png")
-    display: block
-    float: left
-
 =icon($ident, $size: 16)
   background-image: image-url("#{$size}x#{$size}/#{$ident}.png")
 
@@ -33,9 +27,3 @@
 +icon-class("edit")
 +icon-class("index")
 +icon-class("show")
-
-+icon-text("add")
-+icon-text("delete")
-+icon-text("edit")
-+icon-text("index")
-+icon-text("show")
