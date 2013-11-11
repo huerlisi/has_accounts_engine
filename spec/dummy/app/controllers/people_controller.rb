@@ -1,4 +1,4 @@
-class PeopleController < AuthorizedController
+class PeopleController < HasAccountsController
   def index
     set_collection_ivar resource_class.search(
       params[:by_text],
