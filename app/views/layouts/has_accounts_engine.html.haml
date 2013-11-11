@@ -1,0 +1,49 @@
+!!!
+%html
+  %head
+    %meta{:charset => 'utf-8'}/
+    = favicon_link_tag 'favicon.ico'
+
+    = stylesheet_link_tag 'has_accounts_engine/application', :media => 'all'
+    = stylesheet_link_tag 'print', :media => 'print'
+    = javascript_include_tag "application"
+
+    = csrf_meta_tag
+    %title
+      - if current_user
+        = "#{content_for :page_title} - #{t('application.title')}"
+      - else
+        = "#{content_for :page_title} - #{t('application.title')}"
+
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          = link_to root_path, :class => 'brand' do
+            = t('application.title')
+
+          .brand(style="margin-left: 1em")
+
+    #content.container-fluid
+      - if notice
+        = boot_alert(notice, 'success')
+      - if alert
+        = boot_alert(alert, 'error')
+      .row-fluid
+        - if user_signed_in?
+          #sidebar.span2
+            = render 'has_accounts/sidebar'
+          .span10
+            .content
+              = yield
+        - else
+          .offset3.span6= yield
+
+    #footer
+      .container
+        %p.pull-right
+          = link_to "Deutsch", :locale => 'de-CH'
+          = link_to "English", :locale => 'en'
+        %p
+          Bookyt is built by <a href="http://cyt.ch" target="_blank">CyT GmbH</a>.
+          Code licensed under the <a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank">GNU AGPL 3</a>.
