@@ -1,0 +1,144 @@
+// CyT
+@import 'partials/base';
+@import 'partials/content/icons';
+@import 'partials/content/combobox';
+@import 'partials/content/overview';
+@import 'partials/content/contextual';
+@import 'partials/content/fixed_sidebar';
+@import 'partials/content/select_form_labels';
+@import 'partials/content/app';
+
+// jQuery UI
+
+.well:empty {
+  display: none;
+}
+
+.label.disabled {
+  background-color: transparent;
+  color:            #404040;
+}
+
+.label.disabled:hover {
+  background-color: #BFBFBF;
+  color:            white;
+}
+
+// Styles
+.page-header {
+  margin-top:        0;
+}
+
+// Tabs
+.tab-content {
+  overflow: visible;
+}
+
+// Buttons
+.btn input {
+	float: none;
+	clear: both;
+}
+
+.content > a {
+  clear: both;
+  display: block;
+  float: none;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+// Pagination
+.pagination {
+  margin: 0;
+}
+
+.pagination ul {
+    float: right;
+}
+
+.pagination ul .gap {
+  border: none;
+}
+
+
+// Form
+.search-form {
+    float: left;
+}
+
+.well .form-actions {
+  background-color: inherit;
+  padding-bottom:   0px;
+}
+
+// Sidebar
+.sidebar.well {
+  padding: 8px 0;
+}
+
+.filter_style {
+  display: block;
+  list-style: none;
+}
+
+.filter_style li{
+  list-style: none;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+}
+
+.filter_style li a{
+  text-decoration: none;
+}
+
+// Filter
+.nav-list label.checkbox {
+  margin-bottom: 0;
+  padding: 3px 15px;
+  padding-left: 33px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.nav-list > .active > label.checkbox {
+  background-color: #08C;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+// Forms
+input, textarea, select {
+  background-color: #fff;
+}
+
+input, textarea {
+  width: 98%;
+}
+
+select {
+  width: 100%;
+}
+
+.input-prepend .add-on {
+  float: left;
+}
+
+// jQuery UI
+.ui-widget-content{
+  border: 1px solid #e4e4e4 !important;
+  background-color: #fff !important;
+  background-image: none;
+}
+
+.ui-widget-content a{
+  background-color: #fff;
+  color: #222222
+}
+
+// Bookings
+tr.booking {
+  .amount {
+    text-align: right;
+  }
+}
