@@ -3,8 +3,6 @@ de:
   activerecord:
     models:
       account:          Konto
-      bank_account:     Bankkonto
-      bank:             Bank
       account_type:     Kontentyp
       booking:          Buchung
       booking_template: Buchungsvorlage
@@ -15,14 +13,6 @@ de:
         title:          Titel
         saldo:          Saldo
         account_type:   Kontentyp
-      bank_account:
-        number:         Kontokorrent-Nr.
-        iban:           IBAN
-        pc_id:          VESR-Teilnehmer-Nr.
-        esr_id:         VESR-Identifikations-Nr.
-      bank:
-        clearing:       Clearing-Nr.
-        swift:          SWIFT-Nr.
       account_type:
         name:           Name
         title:          Titel
@@ -45,36 +35,23 @@ de:
         valuta:         Valuta
         value:          Betrag
       booking_template:
-        amount_relates_to: "Relativ zu"
-        charge_rate_code: Abgabesatz
-        credit_account: Soll
-        debit_account: Haben
-        reference: Referenz
-        value_date: Valutadatum
-
-  form:
-    bank:
-      money_transfer: Bankverbindung
+        amount_relates_to: Relativ zu
+        charge_rate_code:  Abgabesatz
+        credit_account:    Soll
+        debit_account:     Haben
+        reference:         Referenz
+        value_date:        Valutadatum
 
   # Title customizations
   accounts:
     index:
       title:            Kontenplan
     edit_bookings:
-      title: Buchungen
+      title:            Buchungen
     info:
-      title: Kontodaten
+      title:            Kontodaten
     journal:
-      title: Auszug
-  attachments:
-    list:
-      title: Dokumente
-  bank_accounts:
-    index:
-      title:            Bankkonti
-  banks:
-    index:
-      title:            Banken
+      title:            Auszug
   account_types:
     index:
       title:            Kontentypen
@@ -86,6 +63,6 @@ de:
 
   crud:
     action:
-      copy:             Kopieren
-      only_credit_bookings: "Nur Soll"
-      only_debit_bookings: "Nur Haben"
+      copy:                 Kopieren
+      only_credit_bookings: Nur Soll
+      only_debit_bookings:  Nur Haben

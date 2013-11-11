@@ -3,31 +3,22 @@ en:
   activerecord:
     models:
       account:          Account
-      bank_account:     Bank account
-      bank:             Bank
-      account_type:     Account type
+      account_type:     Account Type
       booking:          Booking
+      booking_template: Booking Template
 
     attributes:
       account:
         code:           No.
         title:          Title
         saldo:          Saldo
-        account_type:   Acocunt type
-      bank_account:
-        number:         Account no.
-        iban:           IBAN
-        pc_id:          VESR no.
-        esr_id:         VESR identifier
-      bank:
-        clearing:       Clearing no.
-        swift:          SWIFT no.
+        account_type:   Account Type
       account_type:
         name:           Name
         title:          Title
       booking:
         code:           Booking no.
-        value_date:     Value date
+        value_date:     Value Date
         title:          Title
         amount:         Amount
         comments:       Remarks
@@ -43,23 +34,35 @@ en:
         destroy:        Delete
         valuta:         Valuta
         value:          Amount
+      booking_template:
+        amount_relates_to: Relativ to
+        charge_rate_code:  Charge Rate
+        credit_account:    Credit Account
+        debit_account:     Debit Account
+        reference:         Reference
+        value_date:        Value Date
 
   # Title customizations
-  account:
+  accounts:
     index:
       title:            Accounts
-  bank_account:
-    index:
-      title:            Bank Accounts
-  bank:
-    index:
-      title:            Banks
-  account_type:
+    edit_bookings:
+      title:            Bookings
+    info:
+      title:            Account data
+    journal:
+      title:            Journal
+  account_types:
     index:
       title:            Account Types
-  booking:
+  bookings:
     index:
       title:            Booking Journal
+    copy:
+      title:            Copy Booking
+
   crud:
     action:
-      copy:             Kopieren
+      copy:                 Kopieren
+      only_credit_bookings: Only Credit
+      only_debit_bookings:  Only Debit
