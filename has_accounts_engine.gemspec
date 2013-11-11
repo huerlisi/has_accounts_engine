@@ -34,5 +34,7 @@ Gem::Specification.new do |s|
   s.add_dependency(%q<acts-as-taggable-on>)
   s.add_dependency(%q<validates_timeliness>)
   s.add_dependency(%q<inherited_resources>)
+  s.add_dependency(%q<has_scope>)
   s.add_dependency(%q<simple_form>)
+  s.add_dependency(%q<anjlab-bootstrap-rails>, ["~>2.1.0"])
 end
