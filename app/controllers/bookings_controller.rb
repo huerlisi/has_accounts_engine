@@ -1,4 +1,4 @@
-class BookingsController < AuthorizedController
+class BookingsController < HasAccountsController
   # Scopes
   has_scope :by_value_period, :using => [:from, :to], :default => proc { |c| c.session[:has_scope] }
   has_scope :by_text

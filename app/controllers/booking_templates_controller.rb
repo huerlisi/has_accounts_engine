@@ -1,4 +1,4 @@
-class BookingTemplatesController < AuthorizedController
+class BookingTemplatesController < HasAccountsController
   # Actions
   def create
     create! do |success, failure|
