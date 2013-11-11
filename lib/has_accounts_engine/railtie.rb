@@ -3,6 +3,7 @@ require 'rails'
 require 'simple_form'
 require 'has_scope'
 require 'i18n_rails_helpers'
+require 'bootstrap-rails'
 
 module HasAccountsEngine
   class Railtie < Rails::Engine
