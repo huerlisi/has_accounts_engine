@@ -6,9 +6,9 @@
       = f.input :code
   .row-fluid
     .span6
-      = f.association :credit_account, :as => :combobox, :collection => accounts_as_collection, :input_html => {:class => 'span6'}
-    .span6
       = f.association :debit_account, :as => :combobox, :collection => accounts_as_collection, :input_html => {:class => 'span6'}
+    .span6
+      = f.association :credit_account, :as => :combobox, :collection => accounts_as_collection, :input_html => {:class => 'span6'}
   .row-fluid
     .span6
       = f.input :amount

@@ -22,8 +22,8 @@ de:
         title:          Titel
         amount:         Betrag
         comments:       Bemerkungen
-        credit_account: Soll
-        debit_account:  Haben
+        credit_account: Haben
+        debit_account:  Soll
         reference:      Referenz
         reference_type: Referenz Typ
         reference_id:   Referenz ID
@@ -37,8 +37,8 @@ de:
       booking_template:
         amount_relates_to: Relativ zu
         charge_rate_code:  Abgabesatz
-        credit_account:    Soll
-        debit_account:     Haben
+        credit_account:    Haben
+        debit_account:     Soll
         reference:         Referenz
         value_date:        Valutadatum
 
