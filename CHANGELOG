@@ -1,3 +1,28 @@
+2.0.0
+=====
+* Add simple_form as dependency and require gem in railtie.
+* Only add tab link to attachment in accounts view if Attachment model is defined.
+* Add simple_form input types for combobox and date_field.
+* Inherit from HasAccountsController, not AuthorizedController.
+* Do not try to link to referenced object for bookings in accounts view.
+* Only show code field in booking form if Booking supports it.
+* Drop hidden field for reference_type in bookings form.
+* Drop fiscal year filter from bookings sidebar.
+* Add has_scope and anjlab-bootstrap-rails gem dependencies; load has_scope and i18n_rails_helpers in railtie.
+* Add bootstrap_helper and has_accounts_helper from Bookyt.
+* Add generic view helpers from Bookyt.
+* Port layout from Bookyt.
+* Port stylesheets from Bookyt.
+* Update Gemfile.lock
+* Require bootstrap-rails in engine.
+* Add images from Bookyt.
+* Drop unused icon-text mixins in SASS; breaks inclusion as gem.
+* Drop all Bank and BankAccount related controllers and views.
+* Cleanup locales.
+* Drop print stylesheet for now.
+* Add JS assets.
+* Switch debit and credit columns.
+
 1.1.2
 =====
 * Update factories for accounts.
