@@ -22,6 +22,7 @@ class AccountsController < HasAccountsController
     end
     @bookings = @bookings
     @carry_booking = @bookings.all.first
+    @saldo = @account.saldo(@carry_booking, false)
 
     show!
   end
