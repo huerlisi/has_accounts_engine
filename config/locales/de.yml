@@ -13,6 +13,7 @@ de:
         title:          Titel
         saldo:          Saldo
         account_type:   Kontentyp
+        tag_list:       Tags
       account_type:
         name:           Name
         title:          Titel
