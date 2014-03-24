@@ -8,3 +8,5 @@
 .tab-content
   #tab-bookings.tab-pane.active= render 'show_bookings'
   #tab-info.tab-pane= render "form"
+  - if defined?(Attachment)
+    #tab-attachments.tab-pane= render 'show_attachments'
