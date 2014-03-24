@@ -1,3 +1,16 @@
+2.0.1
+=====
+* Use proper bootstrap markup for bookings/new_form.
+* Do not use paginated_section as it is will_paginate specific.
+* Move carry saldo calculation from view to accounts controller.
+* Do not carry saldo for profit accounts in account view.
+* Use proper bootstrap markup for bookings/simple_form.
+* Drop double pagination.
+* Add translation for Account#tag_list attribute.
+* Do not only add tab link, but also tab content for attachments in account view.
+* Use presence of Account#attachments method instead of Attachment class.
+* Re-enable reference input field for Bookings form.
+
 2.0.0
 =====
 * Add simple_form as dependency and require gem in railtie.
