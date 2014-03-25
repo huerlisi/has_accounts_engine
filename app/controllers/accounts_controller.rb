@@ -6,7 +6,7 @@ class AccountsController < HasAccountsController
   has_scope :page, :only => :index
 
   def index
-    @accounts = apply_scopes(Account).includes(:account_type).includes(:credit_bookings, :credit_bookings)
+    @accounts = apply_scopes(Account).includes(:account_type).includes(:credit_bookings, :credit_bookings).page(params[:page]).per_page(100)
   end
 
   def show
