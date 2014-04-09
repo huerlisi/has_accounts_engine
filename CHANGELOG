@@ -1,7 +1,9 @@
-2.0.2 (unreleased)
-=====
+3.0.0.beta0
+===========
 * Fix datepicker to use localized date on postgresql.
 * Use common index/list view conventions for accounts.
+* Drop seperator line between subject and comment in booking lists.
+* Implement table navigation and editing for booking table.
 
 2.0.1
 =====
