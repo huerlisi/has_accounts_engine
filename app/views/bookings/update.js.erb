@@ -1,0 +1,4 @@
+$('#<%= "#{resource.class.name.underscore}_#{resource.to_param}" %>').replaceWith('<%=escape_javascript render resource %>');
+$('tr#<%= "#{resource.class.name.underscore}_#{resource.to_param}" %>').addClass('selected')
+initializeBehaviours();
+

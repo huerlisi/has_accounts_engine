@@ -1,0 +1,15 @@
+- booking = resource
+%tr[booking]
+  = simple_fields_for booking, :wrapper => 'table' do |f|
+    %td= f.input :value_date, :as => 'date_field', :label => false
+    %td
+      = f.input :title, :input_html => {'data-autofocus' => true}
+      = f.input :comments, :rows => 2
+    %td= link_to booking.reference.to_s(:reference), booking.reference unless booking.reference.nil?
+    %td= f.association :debit_account, :collection => accounts_as_collection(Account.all), :as => :combobox, :input_html => { :style => 'max-width: 14ex' }
+    %td= f.association :credit_account, :collection => accounts_as_collection(Account.all), :as => :combobox, :input_html => { :style => 'max-width: 14ex' }
+    %td= f.input :amount, :as => :string
+    %td.action-links
+      = list_link_for(:show, booking, :icon => 'remove', :method => :put, :remote => true, 'data-table-key' => '27')
+      = link_to "#", 'data-table-key' => '13' do
+        %i.icon-ok

@@ -1,14 +1,15 @@
-%table.table.table-striped.bookings.collection
-  %thead
-    %tr
-      %th= t_attr :valuta
-      %th= t_attr :title
-      %th= t_attr :reference
-      %th= t_attr :debit_account
-      %th= t_attr :credit_account
-      %th.currency= t_attr 'amount'
-      %th.action-links
-  %tbody
-    = render collection, :item_action => (item_action ||= nil)
+= form_tag '', :id => 'bookings_table_form', 'data-table-select' => true, :method => :put, :remote => true do
+  %table.table.table-striped.bookings.collection
+    %thead
+      %tr
+        %th.valute_date= t_attr :valuta
+        %th.title= t_attr :title
+        %th.reference= t_attr :reference
+        %th.debit_account= t_attr :debit_account
+        %th.credit_account= t_attr :credit_account
+        %th.amount.currency= t_attr 'amount'
+        %th.action-links(style='width: 66px')
+    %tbody
+      = render collection, :item_action => (item_action ||= nil)
 
 = render 'bookings/sidebar'

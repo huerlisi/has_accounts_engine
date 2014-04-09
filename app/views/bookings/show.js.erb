@@ -1,0 +1,4 @@
+$('#booking_<%= resource.id %>').replaceWith('<%=j render "booking_form" %>');
+$('#bookings_table_form').attr('action', '<%= booking_path(resource) %>');
+initializeBehaviours();
+window.bookyt_table.enterEdit()

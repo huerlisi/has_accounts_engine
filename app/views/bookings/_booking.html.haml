@@ -2,8 +2,8 @@
 
 %tr[booking]
   %td= booking.value_date
-  %td
-    = link_to booking.title, item_action.call(booking), 'data-href-container' => 'tr'
+  %td.subject
+    = link_to booking.title, item_action.call(booking), 'data-remote' => true, 'data-table-key' => '13'
     - if booking.comments.present?
       %div
         %i= booking.comments
@@ -12,6 +12,6 @@
   %td= link_to booking.credit_account.code, account_path(booking.credit_account), :title => booking.credit_account.title unless booking.credit_account.nil?
   %td.currency= currency_fmt(booking.amount)
   %td.action-links
-    = list_link_for(:edit, booking)
-    = list_link_for(:delete, booking, :remote => true)
-    = list_link_for(:copy, booking)
+    = list_link_for(:edit, booking, 'data-table-key' => '69')
+    = list_link_for(:delete, booking, :remote => true, 'data-table-key' => '68')
+    = list_link_for(:copy, booking, 'data-table-key' => '67')
