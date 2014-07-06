@@ -1,5 +1,7 @@
 - url_params = {:controller => 'accounts', :action => 'show', :id => params[:account_id] || params[:id]}
 
+= paginate @bookings
+
 %table.table.table-striped.bookings.collection
   %thead
     = render 'accounts/booking_list_header'
@@ -14,3 +16,5 @@
       = render 'accounts/booking_item'
   %tfoot
     = render 'accounts/booking_list_footer' unless @bookings.empty?
+
+= paginate @bookings
