@@ -1,3 +1,3 @@
 module HasAccountsEngine
-  VERSION = "3.0.0.beta0"
+  VERSION = "3.0.0.beta1"
 end
