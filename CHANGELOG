@@ -1,3 +1,10 @@
+3.0.0.beta1
+===========
+* Refactor all usage of deprecated #is_XXX_account? calls.
+* Drop unused booking_list_paginate view.
+* Add pagination to account booking view.
+* Use #accounted_amount in account journals.
+
 3.0.0.beta0
 ===========
 * Fix datepicker to use localized date on postgresql.
