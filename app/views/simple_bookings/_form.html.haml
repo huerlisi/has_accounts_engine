@@ -1,18 +1,2 @@
 = simple_form_for @booking, :url => invoice_simple_bookings_path do |f|
-  = f.input :debit_account_id, :as => :hidden
-  = f.input :credit_account_id, :as => :hidden
-  = f.input :reference_id, :as => :hidden
-  = f.input :reference_type, :as => :hidden
-
-  .row-fluid
-    .span6
-      = f.input :title, :input_html => {"data-autofocus" => true}
-    .span6
-      = f.input :value_date, :as => :date_field
-  .row-fluid
-    .span6
-      = f.input :amount, :as => :string
-
-  .row-fluid
-    .span12
-      = f.input :comments, :input_html => {:rows => 4, :class => 'span12'}
+  = render 'bookings/form_fields', resource: @booking, f: f
