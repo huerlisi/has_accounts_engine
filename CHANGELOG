@@ -1,3 +1,14 @@
+3.0.0.beta4
+===========
+FIXES:
+* Factor out form_fields for bookings/form.
+* Use bookings form fields for simple_bookings.
+
+CLEANUP:
+* Update all gems.
+* Adapt travis ruby versions, use container builds.
+* Use ruby 2.1.5 by default.
+
 3.0.0.beta3
 ===========
 * Fix width of tag_list input in booking template form.
