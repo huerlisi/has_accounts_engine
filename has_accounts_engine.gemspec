@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   # Dependencies
-  s.add_dependency(%q<rails>, ["~> 3.1"])
-  s.add_dependency(%q<has_accounts>, [">= 1.0.2"])
+  s.add_dependency(%q<rails>, ["~> 3.2"])
+  s.add_dependency(%q<has_accounts>, ["~> 2.1"])
   s.add_dependency(%q<has_vcards>)
   s.add_dependency(%q<i18n_rails_helpers>)
   s.add_dependency(%q<acts-as-taggable-on>)
