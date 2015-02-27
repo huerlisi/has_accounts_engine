@@ -13,11 +13,8 @@ end
 # ====
 group :test do
   # Framework
-  gem "rspec"
-  gem "rspec-rails"
-
-  # Browser
-  gem "capybara"
+  gem 'rspec', '~> 2.14'
+  gem 'rspec-rails', '~> 2.14'
 
   # Fixtures
   gem "factory_girl_rails", "~>1.1"
@@ -28,6 +25,9 @@ group :test do
 
   # Database
   gem "sqlite3"
+
+  # Browser
+  gem "capybara"
 end
 
 gem 'validates_timeliness'
