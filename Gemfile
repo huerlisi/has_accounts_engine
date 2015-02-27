@@ -13,6 +13,7 @@ end
 # ====
 group :test do
   # Framework
+  gem 'test-unit'
   gem 'rspec', '~> 2.14'
   gem 'rspec-rails', '~> 2.14'
 
