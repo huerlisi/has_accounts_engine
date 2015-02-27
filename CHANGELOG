@@ -1,3 +1,8 @@
+3.0.0.beta5
+===========
+FIXES:
+* Add test-unit as dependency for Ruby 2.2.
+
 3.0.0.beta4
 ===========
 FIXES:
