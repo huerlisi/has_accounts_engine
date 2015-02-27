@@ -1,5 +1,5 @@
 class LegacyBank < ActiveRecord::Base
-  set_table_name 'banks'
+  self.table_name = 'banks'
 end
 
 class BankNowInheritsFromPerson < ActiveRecord::Migration
