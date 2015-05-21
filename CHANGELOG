@@ -1,3 +1,8 @@
+3.0.0.beta6 (unreleased)
+===========
+FIXES:
+* Correct SCSS Syntax on overview partial
+
 3.0.0.beta5
 ===========
 FIXES:
