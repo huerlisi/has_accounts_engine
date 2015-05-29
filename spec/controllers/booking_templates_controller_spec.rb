@@ -11,9 +11,9 @@ describe BookingTemplatesController do
   describe "list all" do
     it "booking templates" do
       get :index
-      assigns(:booking_templates).should_not be_nil
-      assigns(:booking_templates).should_not be_empty
-      assigns(:booking_templates).first.should be_a_kind_of(BookingTemplate)
+      expect(assigns(:booking_templates)).to_not be_nil
+      expect(assigns(:booking_templates)).to_not be_empty
+      expect(assigns(:booking_templates).first).to be_a_kind_of(BookingTemplate)
     end
   end
 
@@ -29,8 +29,8 @@ describe BookingTemplatesController do
                                            :matcher => matcher,
                                            :credit_account_id => credit_account.id,
                                            :debit_account_id => debit_account.id}}
-      response.should redirect_to('/booking_templates')
-      assigns(:booking_template).title.should eq(title)
+      expect(response).to redirect_to('/booking_templates')
+      expect(assigns(:booking_template).title).to eq(title)
     end
   end
 
@@ -39,8 +39,8 @@ describe BookingTemplatesController do
       booking_template = Factory.create(:invoice_booking_template)
       new_title = 'title'
       put :update, {:id => booking_template.id, :booking_template => {:title => new_title}}
-      response.should redirect_to('/booking_templates')
-      assigns(:booking_template).title.should eq(new_title)
+      expect(response).to redirect_to('/booking_templates')
+      expect(assigns(:booking_template).title).to eq(new_title)
     end
   end
 end
