@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
 
   # Dependencies
   s.add_dependency(%q<rails>, ["~> 3.2"])
-  s.add_dependency(%q<has_accounts>, ["~> 2.1"])
+  s.add_dependency(%q<has_accounts>, ["~> 3.0.0.beta0"])
   s.add_dependency(%q<has_vcards>)
   s.add_dependency(%q<i18n_rails_helpers>)
   s.add_dependency(%q<acts-as-taggable-on>)
