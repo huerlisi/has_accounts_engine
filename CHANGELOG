@@ -1,5 +1,9 @@
 3.0.0.beta6 (unreleased)
 ===========
+FEATURES:
+* support by_amount and by_date scopes
+* add filter form to bookings index
+
 FIXES:
 * Correct SCSS Syntax on overview partial
 
