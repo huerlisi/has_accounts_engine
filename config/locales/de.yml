@@ -61,6 +61,12 @@ de:
       title:            Buchungsjournal
     copy:
       title:            Buchung kopieren
+    search:
+      by_text:          Inhalt
+      by_amount_from:   Betrag von
+      by_amount_to:     Betrag bis
+      by_date_from:     Datum von
+      by_date_to:       Datum bis
 
   crud:
     action:
