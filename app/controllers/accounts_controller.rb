@@ -1,6 +1,6 @@
 class AccountsController < HasAccountsController
   # Scopes
-  has_scope :by_value_period, :using => [:from, :to], :default => proc { |c| c.session[:has_scope] }
+  has_scope :by_date, :using => [:from, :to], :default => proc { |c| c.session[:has_scope] }
   has_scope :by_text
 
   has_scope :page, :only => :index
@@ -24,8 +24,8 @@ class AccountsController < HasAccountsController
     @carry_booking = @bookings.all.first
     @saldo = @account.saldo(@carry_booking, false)
 
-    if @account.profit_account? && params[:by_value_period] && params[:by_value_period][:to]
-      @saldo -= @account.saldo(Date.parse(params[:by_value_period][:from]), false)
+    if @account.profit_account? && params[:by_date] && params[:by_date][:to]
+      @saldo -= @account.saldo(Date.parse(params[:by_date][:from]), false)
     end
 
     show!
