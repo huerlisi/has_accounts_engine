@@ -1,4 +1,9 @@
-3.0.0.beta6 (unreleased)
+3.0.0.beta7
+===========
+FEATURES:
+* Support Ruby 2.2
+
+3.0.0.beta6
 ===========
 FEATURES:
 * support by_amount and by_date scopes
