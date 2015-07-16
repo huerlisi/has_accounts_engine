@@ -64,5 +64,6 @@ en:
   crud:
     action:
       copy:                 Kopieren
+      all_bookings:         All
       only_credit_bookings: Only Credit
       only_debit_bookings:  Only Debit
