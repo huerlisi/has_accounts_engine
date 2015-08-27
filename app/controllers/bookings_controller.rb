@@ -5,11 +5,6 @@ class BookingsController < HasAccountsController
   has_scope :by_date, :using => [:from, :to]
 
   # Actions
-  def index
-    # @bookings = apply_scopes(Booking).accessible_by(current_ability, :list).includes(:credit_account, :debit_account).paginate(:page => params[:page], :per_page => params[:per_page])
-    index!
-  end
-
   def new
     @booking = Booking.new(:value_date => Date.today)
     # Only include base class records
