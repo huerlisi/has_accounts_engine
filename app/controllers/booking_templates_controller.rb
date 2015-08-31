@@ -18,6 +18,6 @@ class BookingTemplatesController < HasAccountsController
     booking_params[:code]       ||= (Booking.maximum(:code) || 0) + 1
     booking_parameters = @booking_template.booking_parameters(booking_params)
 
-    redirect_to simple_edit_bookings_path(:booking => booking_parameters)
+    redirect_to new_booking_path(:booking => booking_parameters)
   end
 end

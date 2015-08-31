@@ -15,11 +15,7 @@ class BookingsController < HasAccountsController
     # Take value date from form
     @booking.value_date = params[:booking][:value_date]
 
-    render :action => 'simple_edit'
-  end
-
-  def simple_edit
-    new!
+    render :action => 'edit'
   end
 
   def select
