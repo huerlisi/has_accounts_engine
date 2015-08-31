@@ -5,13 +5,6 @@ class BookingsController < HasAccountsController
   has_scope :by_date, :using => [:from, :to]
 
   # Actions
-  def new
-    @booking = Booking.new(:value_date => Date.today)
-    # Only include base class records
-    @booking_templates = BookingTemplate.where(:type => [nil, 'BookingTemplate']).where("NOT(code LIKE '%:%')").paginate(:page => params[:page])
-    new!
-  end
-
   def select_booking
     @booking = Booking.find(params[:id]).dup
 
