@@ -26,14 +26,7 @@ class BookingsController < HasAccountsController
   end
 
   def create
-    @booking = Booking.new(params[:booking])
-
-    create! do |success, failure|
-      success.html do
-        redirect_to new_booking_path
-      end
-      failure.html {render 'edit'}
-    end
+    create! { new_booking_path }
   end
 
   def copy

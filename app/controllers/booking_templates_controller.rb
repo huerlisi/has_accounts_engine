@@ -1,15 +1,11 @@
 class BookingTemplatesController < HasAccountsController
   # Actions
   def create
-    create! do |success, failure|
-      success.html { redirect_to collection_path }
-    end
+    create! { collection_path }
   end
 
   def update
-    update! do |success, failure|
-      success.html { redirect_to collection_path }
-    end
+    update! { collection_path }
   end
 
   def new_booking
