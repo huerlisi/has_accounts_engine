@@ -2,6 +2,7 @@
 %tr[booking]
   = simple_fields_for booking, :wrapper => 'table' do |f|
     %td= f.input :value_date, :as => 'date_field', :label => false
+    %td= f.input :code, :label => false
     %td
       = f.input :title, :input_html => {'data-autofocus' => true}
       = f.input :comments, :rows => 2
