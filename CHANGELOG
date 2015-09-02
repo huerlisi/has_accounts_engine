@@ -1,3 +1,24 @@
+<a name="3.0.0.beta9"></a>
+## 3.0.0.beta9 (2015-09-02)
+
+
+#### Features
+
+* **bookings**
+  *  use same booking form in all cases ((6cafad93))
+  *  drop two step creation of new bookings ((e9fef5b4))
+  *  add filter form to bookings index ((2f6f2601))
+* **accounts**
+  *  do not call accounts with a date range from index ((4295b7e6))
+  *  drop saldo column in account list ((eaf4d0e6))
+* **Bookings**  support by_amount and by_date scopes ((29f808eb))
+
+#### Bug Fixes
+
+* **i18n**
+  *  add missing translations for en ((6977a37b))
+  *  fix translations for booking filter ((950e1853))
+
 3.0.0.beta8
 ===========
 FEATURES:
