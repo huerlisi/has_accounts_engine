@@ -1,3 +1,13 @@
+3.0.0.beta8
+===========
+FEATURES:
+* feat(bookings): drop two step creation of new bookings
+* feat(bookings): use same booking form in all cases
+
+FIXES:
+* fix(i18n): fix translations for booking filter
+* fix(i18n): add missing translations for en
+
 3.0.0.beta7
 ===========
 FEATURES:
