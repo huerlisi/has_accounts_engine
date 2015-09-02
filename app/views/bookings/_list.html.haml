@@ -13,4 +13,5 @@
     %tbody
       = render collection, :item_action => (item_action ||= nil)
 
+= paginate collection if defined?(paginate)
 = render 'bookings/sidebar'

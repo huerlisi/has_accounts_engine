@@ -14,5 +14,5 @@
   .form-actions
     = f.button :submit, t_action(:search)
 
-= paginate collection if defined?(paginate)
-= render 'list'
+.index
+  = render 'list'
