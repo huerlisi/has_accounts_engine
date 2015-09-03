@@ -13,6 +13,7 @@ en:
         title:          Title
         saldo:          Saldo
         account_type:   Account Type
+        tag_list:       Tags
       account_type:
         name:           Name
         title:          Title
@@ -60,9 +61,16 @@ en:
       title:            Booking Journal
     copy:
       title:            Copy Booking
+    search:
+      by_text:          Content
+      by_amount_from:   Amount from
+      by_amount_to:     Amount to
+      by_date_from:     Date from
+      by_date_to:       Date to
 
   crud:
     action:
-      copy:                 Kopieren
+      copy:                 Copy
+      all_bookings:         All
       only_credit_bookings: Only Credit
       only_debit_bookings:  Only Debit

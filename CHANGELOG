@@ -1,3 +1,63 @@
+<a name="v3.0.0.beta10"></a>
+## v3.0.0.beta10 (2015-09-03)
+
+
+#### Bug Fixes
+
+* **bookings**
+  *  pager needs to be updated when searching ([41ee4cb5](https://github.com/huerlisi/bookyt/commit/41ee4cb53fa812eaba083247b6bb12adae1bdd69))
+  *  show full booking form instead of in-line ([1527ba49](https://github.com/huerlisi/bookyt/commit/1527ba49511f495337f255e2ec546e5d7c5acbc5))
+* **i18n**
+  *  add missing translations for en ([6977a37b](https://github.com/huerlisi/bookyt/commit/6977a37b1e48beabfc66887e8ac61bf5db6605a4))
+  *  fix translations for booking filter ([950e1853](https://github.com/huerlisi/bookyt/commit/950e1853e383add2da6da78c5f0e85cf6a43b0c7))
+* **styling**  fix alignment of booking journal filter ([34f84fd5](https://github.com/huerlisi/bookyt/commit/34f84fd5d658ead336b904945dc3203f88190008))
+
+#### Features
+
+* **Bookings**  support by_amount and by_date scopes ([29f808eb](https://github.com/huerlisi/bookyt/commit/29f808eb3b58050f384df209268af2a7fc8c83a1))
+* **accounts**
+  *  do not call accounts with a date range from index ([4295b7e6](https://github.com/huerlisi/bookyt/commit/4295b7e6ad886aff6c7e3f5732cdad0860019297))
+  *  drop saldo column in account list ([eaf4d0e6](https://github.com/huerlisi/bookyt/commit/eaf4d0e6b3a48f9af73f8c0d88303d63da8cd0b2))
+* **bookings**
+  *  show code in lists ([c3803ee7](https://github.com/huerlisi/bookyt/commit/c3803ee78f3413b201b0f20b1fcb3c4c0a6b3d8a))
+  *  use same booking form in all cases ([6cafad93](https://github.com/huerlisi/bookyt/commit/6cafad93d55ab2fb595a1a15829b32dcd616dc2d))
+  *  drop two step creation of new bookings ([e9fef5b4](https://github.com/huerlisi/bookyt/commit/e9fef5b4943d8aef3ad1aede87890ac0779f358c))
+  *  add filter form to bookings index ([2f6f2601](https://github.com/huerlisi/bookyt/commit/2f6f260180f6ed9a7732b98b7973c0f9f67ab14d))
+* **filter**  the journal filter uses the fiscal year ([6c185830](https://github.com/huerlisi/bookyt/commit/6c1858302d4922c1dafb4c832dc5cfb619954cee))
+
+
+
+<a name="3.0.0.beta9"></a>
+## 3.0.0.beta9 (2015-09-02)
+
+
+#### Features
+
+* **bookings**
+  *  use same booking form in all cases ((6cafad93))
+  *  drop two step creation of new bookings ((e9fef5b4))
+  *  add filter form to bookings index ((2f6f2601))
+* **accounts**
+  *  do not call accounts with a date range from index ((4295b7e6))
+  *  drop saldo column in account list ((eaf4d0e6))
+* **Bookings**  support by_amount and by_date scopes ((29f808eb))
+
+#### Bug Fixes
+
+* **i18n**
+  *  add missing translations for en ((6977a37b))
+  *  fix translations for booking filter ((950e1853))
+
+3.0.0.beta8
+===========
+FEATURES:
+* feat(bookings): drop two step creation of new bookings
+* feat(bookings): use same booking form in all cases
+
+FIXES:
+* fix(i18n): fix translations for booking filter
+* fix(i18n): add missing translations for en
+
 3.0.0.beta7
 ===========
 FEATURES:

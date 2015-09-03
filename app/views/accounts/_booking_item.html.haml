@@ -1,5 +1,6 @@
 %tr[@booking]
   %td= @booking.value_date
+  %td= @booking.code
   %td
     = link_to @booking.title, @booking, {'data-href-container' => 'tr'}
     - if @booking.comments.present?

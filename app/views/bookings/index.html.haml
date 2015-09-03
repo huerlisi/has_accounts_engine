@@ -3,16 +3,17 @@
 = boot_page_title
 
 = simple_form_for '', :method => :get, remote: true do |f|
-  .row-fluid
-    .span6= f.input :by_text, label: t(:by_text, scope: 'bookings.search'), required: false
-  .row-fluid
-    .span3= f.input 'by_amount[from]', label: t(:by_amount_from, scope: 'bookings.search'), required: false
-    .span3= f.input 'by_amount[to]', label: t(:by_amount_to, scope: 'bookings.search'), required: false
-    .span3= f.input 'by_date[from]', label: t(:by_date_from, scope: 'bookings.search'), required: false
-    .span3= f.input 'by_date[to]', label: t(:by_date_to, scope: 'bookings.search'), required: false
+  .container-fluid
+    .row-fluid
+      .span6= f.input :by_text, label: t(:by_text, scope: 'bookings.search'), required: false
+    .row-fluid
+      .span3= f.input 'by_amount[from]', label: t(:by_amount_from, scope: 'bookings.search'), required: false
+      .span3= f.input 'by_amount[to]', label: t(:by_amount_to, scope: 'bookings.search'), required: false
+      .span3= f.input 'by_date[from]', label: t(:by_date_from, scope: 'bookings.search'), required: false, input_html: { value: try_parse_date(params[:by_date][:from]) }
+      .span3= f.input 'by_date[to]', label: t(:by_date_to, scope: 'bookings.search'), required: false, input_html: { value: try_parse_date(params[:by_date][:to]) }
 
   .form-actions
     = f.button :submit, t_action(:search)
 
-= paginate collection if defined?(paginate)
-= render 'list'
+.index
+  = render 'list'

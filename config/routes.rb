@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :bookings do
     collection do
       post :select
-      get :simple_edit
     end
     member do
       get :select_booking

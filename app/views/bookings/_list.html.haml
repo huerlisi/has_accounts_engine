@@ -3,6 +3,7 @@
     %thead
       %tr
         %th.valute_date= t_attr :valuta
+        %th.code= t_attr :code
         %th.title= t_attr :title
         %th.reference= t_attr :reference
         %th.debit_account= t_attr :debit_account
@@ -12,4 +13,5 @@
     %tbody
       = render collection, :item_action => (item_action ||= nil)
 
+= paginate collection if defined?(paginate)
 = render 'bookings/sidebar'
