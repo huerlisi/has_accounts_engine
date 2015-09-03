@@ -1,5 +1,6 @@
 class BookingsController < HasAccountsController
   # Scopes
+  has_scope :by_code
   has_scope :by_text
   has_scope :by_amount, :using => [:from, :to]
   has_scope :by_date, :using => [:from, :to]

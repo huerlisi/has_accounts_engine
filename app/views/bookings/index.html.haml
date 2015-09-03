@@ -5,6 +5,7 @@
 = simple_form_for '', :method => :get, remote: true do |f|
   .container-fluid
     .row-fluid
+      .span3= f.input :by_code, label: t_attr(:code), required: false
       .span6= f.input :by_text, label: t(:by_text, scope: 'bookings.search'), required: false
     .row-fluid
       .span3= f.input 'by_amount[from]', label: t(:by_amount_from, scope: 'bookings.search'), required: false
