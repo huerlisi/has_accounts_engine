@@ -1,5 +1,5 @@
-= simple_form_for @booking do |f|
-  = render 'form_fields', resource: @booking, f: f
+= simple_form_for resource, remote: true do |f|
+  = render 'form_fields', resource: resource, f: f
 
   .form-actions
     = f.button :submit
