@@ -1,3 +1,17 @@
+<a name="3.0.0.beta12"></a>
+## 3.0.0.beta12 (2015-11-03)
+
+
+#### Bug Fixes
+
+* **print**  hide action column in accounts view ((d662aa21))
+
+#### Features
+
+* **print**  add print buttons to account and booking views ((8ee41dd8))
+
+
+
 <a name="3.0.0.beta11"></a>
 ## 3.0.0.beta11 (2015-11-03)
 
