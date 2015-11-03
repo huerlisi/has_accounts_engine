@@ -1,3 +1,18 @@
+<a name="3.0.0.beta11"></a>
+## 3.0.0.beta11 (2015-11-03)
+
+
+#### Features
+
+* **bookings**  add filter form field for booking code ((5d459dc1))
+* **accounts**  support per page parameter for account journal ((37976453))
+
+#### Bug Fixes
+
+* **accounts**  fix default page expression in account view ((178ecf48))
+
+
+
 <a name="v3.0.0.beta10"></a>
 ## v3.0.0.beta10 (2015-09-03)
 
