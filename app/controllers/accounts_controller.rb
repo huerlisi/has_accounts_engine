@@ -12,7 +12,7 @@ class AccountsController < HasAccountsController
   def show
     @account = Account.find(params[:id])
     @bookings = apply_scopes(Booking).includes(:debit_account => :account_type, :credit_account => :account_type).by_account(@account)
-    @bookings = @bookings.page(params[:page]) || 1
+    @bookings = @bookings.page(params[:page] || 1)
 
     if params[:only_credit_bookings]
       @bookings = @bookings.where(:credit_account_id => @account.id)
