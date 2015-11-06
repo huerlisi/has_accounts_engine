@@ -1,3 +1,13 @@
+<a name="3.0.0.beta13"></a>
+## 3.0.0.beta13 (2015-11-06)
+
+
+#### Bug Fixes
+
+* **bookings**  fix booking form ((a2de212d))
+
+
+
 <a name="3.0.0.beta12"></a>
 ## 3.0.0.beta12 (2015-11-03)
 
