@@ -1,6 +1,7 @@
 %tr#booking_list_saldo{:style => "border-top: double 2px black"}
   %td{:colspan => "3"}
-    Kontostand (per #{@bookings.last.value_date})
+    - if @bookings.any?
+      Kontostand (per #{@bookings.last.value_date})
   %td
   %td
   %td
