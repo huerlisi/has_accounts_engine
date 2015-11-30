@@ -23,24 +23,6 @@ Rails.application.routes.draw do
     resources :attachments
   end
 
-  resources :banks do
-    resources :phone_numbers
-    member do
-      get :new_phone_number
-    end
-    collection do
-      get :new_phone_number
-    end
-  end
-
-  resources :bank_accounts do
-    member do
-      get :csv_bookings
-    end
-    resources :bookings
-    resources :attachments
-  end
-
   resources :booking_templates do
     member do
       get :new_booking

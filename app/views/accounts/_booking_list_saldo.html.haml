@@ -5,5 +5,5 @@
   %td
   %td
   %td
-  %td{:style => "text-align: right"}= currency_fmt(@account.saldo(@bookings.last))
+  %td.currency= currency_fmt(@account.saldo(@bookings.last))
   %td.action-links

@@ -9,7 +9,7 @@
         %th.debit_account= t_attr :debit_account
         %th.credit_account= t_attr :credit_account
         %th.amount.currency= t_attr 'amount'
-        %th.action-links(style='width: 66px')
+        %th.action-links
     %tbody
       = render collection, :item_action => (item_action ||= nil)
 
