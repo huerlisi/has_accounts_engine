@@ -2,7 +2,7 @@
 
 %tr[booking_template]
   %td
-    = link_to "%s" % [booking_template.title, booking_template.code], item_action.call(booking_template), 'data-href-container' => 'tr'
+    = link_to booking_template.title, item_action.call(booking_template), 'data-href-container' => 'tr'
     - if booking_template.comments.present?
       %hr{:style => "height: 1px; margin: 0"}/
       %i= booking_template.comments
@@ -13,3 +13,6 @@
   %td= link_to booking_template.credit_account.code, account_path(booking_template.credit_account), :title => booking_template.credit_account.title unless booking_template.credit_account.nil?
   %td.currency= amount_to_s(booking_template)
   %td= t(booking_template.amount_relates_to, :scope => 'booking_template.relation') if booking_template.amount_relates_to.present?
+  %td.action-links
+    = list_link_for(:edit, booking_template)
+    = list_link_for(:delete, booking_template)
