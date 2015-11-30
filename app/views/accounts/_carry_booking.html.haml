@@ -1,8 +1,8 @@
-%tr{:id => "carry_booking"}
+%tr#carry_booking
   %td= @carry_booking.value_date
   %td
+  %td= t('bookyt.carry_booking')
   %td
-    = t('bookyt.carry_booking')
   %td
   %td
   %td.currency= currency_fmt(@saldo)
