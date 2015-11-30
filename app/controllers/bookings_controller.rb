@@ -34,6 +34,7 @@ class BookingsController < HasAccountsController
     original_booking = Booking.find(params[:id])
 
     @booking = original_booking.dup
+    increment_booking_code
 
     render 'edit'
   end
