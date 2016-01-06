@@ -1,8 +1,6 @@
-- item_action ||= lambda{|object| url_for(object)}
-
 %tr[booking_template]
   %td
-    = link_to booking_template.title, item_action.call(booking_template), 'data-href-container' => 'tr'
+    = link_to booking_template.title, [:new_booking, booking_template], 'data-href-container' => 'tr'
     - if booking_template.comments.present?
       %hr{:style => "height: 1px; margin: 0"}/
       %i= booking_template.comments
