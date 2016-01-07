@@ -1,3 +1,14 @@
+<a name="3.0.0.beta14"></a>
+## 3.0.0.beta14 (2016-01-07)
+
+
+#### Features
+
+* **print**  add printing action item to account lists ((870e933d))
+* **Booking**  increment code when copying Booking ((c85196e4))
+
+
+
 <a name="3.0.0.beta13"></a>
 ## 3.0.0.beta13 (2015-11-06)
 
