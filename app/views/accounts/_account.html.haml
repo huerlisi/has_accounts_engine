@@ -8,3 +8,4 @@
   %td.action-links
     = list_link_for(:edit, account)
     = list_link_for(:delete, account)
+    = list_link_to :print, account_path(account, :format => :pdf, :per_page => 5000)
