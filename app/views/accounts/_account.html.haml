@@ -1,8 +1,10 @@
 %tr[account]
   %td= account.code
   %td
-    = link_to account.title, url_for(account), {'data-href-container' => 'tr'}
-    .pull-right= account.tags.map{|tag| boot_label(tag.name)}.join(' ').html_safe
+    = link_to account.title, account, 'data-href-container' => 'tr'
+    .pull-right
+      - account.tags.each do |tag|
+        = boot_label(tag)
   %td.action-links
     = list_link_for(:edit, account)
     = list_link_for(:delete, account)

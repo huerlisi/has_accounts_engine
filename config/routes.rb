@@ -4,11 +4,7 @@
 Rails.application.routes.draw do
   # Bookings
   resources :bookings do
-    collection do
-      post :select
-    end
     member do
-      get :select_booking
       get :copy
     end
   end

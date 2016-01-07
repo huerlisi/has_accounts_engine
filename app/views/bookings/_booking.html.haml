@@ -1,10 +1,8 @@
-- item_action ||= lambda{|object| url_for(object)}
-
 %tr[booking]
   %td= booking.value_date
   %td= booking.code
   %td.subject
-    = link_to booking.title, item_action.call(booking), 'data-table-key' => '13'
+    = link_to booking.title, booking, 'data-table-key' => '13'
     - if booking.comments.present?
       %div
         %i= booking.comments

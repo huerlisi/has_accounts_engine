@@ -11,7 +11,7 @@
         %th.amount.currency= t_attr 'amount'
         %th.action-links
     %tbody
-      = render collection, :item_action => (item_action ||= nil)
+      = render collection
 
 = paginate collection if defined?(paginate)
 = render 'bookings/sidebar'
