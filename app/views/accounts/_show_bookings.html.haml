@@ -1,19 +1,20 @@
-- url_params = {:controller => 'accounts', :action => 'show', :id => params[:account_id] || params[:id]}
+= render 'bookings/filter_form'
 
-= paginate @bookings
+.index
+  = paginate @bookings
 
-%table.table.table-striped.bookings.collection
-  %thead
-    = render 'accounts/booking_list_header'
-  %tbody
-    = render 'accounts/carry_booking' unless @saldo == 0
+  %table.table.table-striped.bookings.collection
+    %thead
+      = render 'accounts/booking_list_header'
+    %tbody
+      = render 'accounts/carry_booking' unless @saldo == 0
 
-    - for @booking in @bookings
-      - amount = @booking.amount
-      - amount = -(amount) if @account.liability_account?
-      - @saldo += @booking.accounted_amount(@account)
-      = render 'accounts/booking_item'
-  %tfoot
-    = render 'accounts/booking_list_footer' unless @bookings.empty?
+      - for @booking in @bookings
+        - amount = @booking.amount
+        - amount = -(amount) if @account.liability_account?
+        - @saldo += @booking.accounted_amount(@account)
+        = render 'accounts/booking_item'
+    %tfoot
+      = render 'accounts/booking_list_footer' unless @bookings.empty?
 
-= paginate @bookings
+  = paginate @bookings
