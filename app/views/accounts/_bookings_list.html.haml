@@ -1,0 +1,11 @@
+= paginate @bookings, :remote => true
+
+%table.table.table-striped.bookings.collection
+  %thead
+    = render 'accounts/booking_list_header'
+  %tbody
+    - @saldo = ''
+    - for @booking in @bookings
+      = render 'accounts/booking_item'
+
+= paginate @bookings

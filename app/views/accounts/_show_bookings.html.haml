@@ -1,17 +1,20 @@
-= paginate @bookings
+= render 'bookings/filter_form'
 
-%table.table.table-striped.bookings.collection
-  %thead
-    = render 'accounts/booking_list_header'
-  %tbody
-    = render 'accounts/carry_booking' unless @saldo == 0
+.index
+  = paginate @bookings
 
-    - for @booking in @bookings
-      - amount = @booking.amount
-      - amount = -(amount) if @account.liability_account?
-      - @saldo += @booking.accounted_amount(@account)
-      = render 'accounts/booking_item'
-  %tfoot
-    = render 'accounts/booking_list_footer' unless @bookings.empty?
+  %table.table.table-striped.bookings.collection
+    %thead
+      = render 'accounts/booking_list_header'
+    %tbody
+      = render 'accounts/carry_booking' unless @saldo == 0
 
-= paginate @bookings
+      - for @booking in @bookings
+        - amount = @booking.amount
+        - amount = -(amount) if @account.liability_account?
+        - @saldo += @booking.accounted_amount(@account)
+        = render 'accounts/booking_item'
+    %tfoot
+      = render 'accounts/booking_list_footer' unless @bookings.empty?
+
+  = paginate @bookings

@@ -1,7 +1,9 @@
 class AccountsController < HasAccountsController
   # Scopes
-  has_scope :by_date, :using => [:from, :to], :default => proc { |c| c.session[:has_scope] }
+  has_scope :by_code
   has_scope :by_text
+  has_scope :by_amount, :using => [:from, :to]
+  has_scope :by_date, :using => [:from, :to]
 
   has_scope :page, :only => :index
 
@@ -28,8 +30,6 @@ class AccountsController < HasAccountsController
     if @account.profit_account? && params[:by_date] && params[:by_date][:to]
       @saldo -= @account.saldo(Date.parse(params[:by_date][:from]), false)
     end
-
-    show!
   end
 
   def csv_bookings
