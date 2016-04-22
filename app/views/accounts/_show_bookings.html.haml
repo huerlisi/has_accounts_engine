@@ -1,5 +1,13 @@
 - url_params = {:controller => 'accounts', :action => 'show', :id => params[:account_id] || params[:id]}
 
+= simple_form_for OpenStruct.new(params[:by_date]), url: '#', as: :by_date, method: :get, wrapper: :inline do |f|
+  .row-fluid
+    .span1= Booking.human_attribute_name :date
+    .span2= f.input :from, as: :date_field, label: true, input_html: { class: 'input-small' }
+    .span2
+      = f.input :to, as: :date_field, label: true, input_html: { class: 'input-small' }
+    .span2= f.button :submit, t('crud.action.filter')
+
 = paginate @bookings
 
 %table.table.table-striped.bookings.collection
