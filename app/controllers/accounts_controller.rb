@@ -21,7 +21,6 @@ class AccountsController < HasAccountsController
     if params[:only_debit_bookings]
       @bookings = @bookings.where(:debit_account_id => @account.id)
     end
-    @bookings = @bookings
     @carry_booking = @bookings.all.first
     @saldo = @account.saldo(@carry_booking, false)
 

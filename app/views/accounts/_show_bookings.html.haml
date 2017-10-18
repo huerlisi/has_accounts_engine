@@ -14,7 +14,8 @@
   %thead
     = render 'accounts/booking_list_header'
   %tbody
-    = render 'accounts/carry_booking' unless @saldo == 0
+    - if @carry_booking && @saldo != 0
+      = render 'accounts/carry_booking'
 
     - for @booking in @bookings
       - amount = @booking.amount
